@@ -11,7 +11,7 @@ BOOKS: list[dict] = []
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "saludo":"Hola, bienvenido a la API de la librería","version": os.getenv("APP_VERSION", "dev")}
+    return {"status": "ok", "saludo":"Holaa, bienvenido a la API de la librería","version": os.getenv("APP_VERSION", "dev")}
 
 
 @app.get("/books")

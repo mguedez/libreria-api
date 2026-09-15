@@ -15,7 +15,7 @@ def test_health(client):
     response = client.get("/health")
     assert response.status_code == 200
     assert response.get_json()["status"] == "ok"
-    assert response.get_json()["saludo"] == "Hola, bienvenido a la API de la librería"
+    assert response.get_json()["saludo"] == "Holaa, bienvenido a la API de la librería"
 
 
 def test_list_books_empty(client):
